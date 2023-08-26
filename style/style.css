@@ -23,6 +23,7 @@
   width: 30%;
 }
 .navbar a {
+  margin-right: 10px;
   text-decoration: none;
   color: rgba(128, 128, 128, 0.515);
   font-size: 15px;
@@ -31,10 +32,11 @@
   display: flex;
   justify-content: center;
   align-content: space-around;
-  height: 400px;
+  height: 200px;
   background: url(https://abc-decor.com/img/gallery/8/thumbs/thumb_l_0362.jpg)
     no-repeat;
   background-size: cover;
+
 }
 .header-title button {
   font-weight: 700;
@@ -49,7 +51,6 @@
     90deg,
     rgba(76, 171, 193, 1) 20%,
     rgba(51, 188, 147, 1) 100%);
-  
 }
 .title {
   display: flex;
@@ -118,7 +119,7 @@
 }
 .main-Booking {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3,1fr); 
 }
 .card-Booking {
   display: flex;
@@ -171,7 +172,7 @@ img {
 .footer-container {
   display: flex;
   flex-direction: column;
-  margin: 0 600px;
+  width: 33,333%;
 }
 .footer-title {
   font-size: 1.5em;
@@ -186,9 +187,10 @@ img {
 }
 .navabar-footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .navabar-footer a {
+  margin: 20px;
   text-decoration: none;
   color: gray;
   font-size: 1em;
@@ -204,3 +206,47 @@ img {
   margin-right: 40px;
   margin-bottom: 10px;
 }
+
+/* @media */
+@media (max-width:470px){
+  .header-line {
+    height: 120px;
+    padding: 0 20px;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .header-line .navbar{
+    flex-direction: column;
+  }
+  .header-line .navbar a{
+    align-self: center;
+  }
+  .header-line h3{
+    font-size: 1em;
+  }
+  .title h3{
+    font-size: 1.5em;
+  }
+  .main-card{
+    display: block;
+  }
+  .blog{
+    padding: 0 10px;
+  }
+  .main-Booking {
+    grid-template-columns: repeat(2,1fr); 
+  }
+  .header-title button {
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 7px 20px;
+  }
+  .contact{
+    position: static;
+    margin-top: 100px;
+  }
+  .contact ion-icon{
+    font-size: 1.3em;
+  }
+}
+
